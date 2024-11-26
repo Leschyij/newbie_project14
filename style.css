@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    font-family: Karla;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 5%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.212);
+    display: grid;
+    grid-template-rows: repeat(2, 1rf);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#joinus {
+    background-color: #fff;
+    grid-area: 1 / 1 / 2 / 3;
+    border-radius: 10px 10px 0 0;
+    padding: 40px;
+}
+
+#joinus h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#joinus h3 { 
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#joinus p {
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.459);
+}
+
+#signup {
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+    padding: 40px;
+    color: #fff;
+}
+
+#signup h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#signup #price {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#price span {
+    font-size: 16px;
+    color: #ffffff83;
+}
+
+#signup p {
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.13);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+#whyus {
+    background-color: hsl(218, 22%, 67%);
+    border-radius: 0 0 10px 0;
+    padding: 40px;
+    color: #fff;
+}
+
+#whyus h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#whyus p {
+    color: #ffffff9f;
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 750px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #signup {
+        border-radius: 0;
+    }
+
+    #whyus {
+        border-radius: 0 0 10px 10px;
+    }
+}
